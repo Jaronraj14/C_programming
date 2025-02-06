@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int num;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    if(num>=99 && num<=999){
+        int digit_1=num/100;
+        int digit_2=(num%100)/10;
+        int digit_3=num%10;
+        int reversed = digit_3 * 100 +digit_2*10+ digit_1;
+        printf("The reversed number is:%d", reversed);
+        return 0;
+    }
+}
